@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("Images/home_background-2.jpg");
+    font-family: "Poppins", sans-serif;
+    background-color: #e5eaf5; /* Modern pastel background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top:90px;
+}
+
+.container {
+    
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    position: relative; /* For positioning background image */
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/backrground_community.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; /* Dim the background image */
+    z-index: -1; /* Place the background image behind the content */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #424067;
+    margin-bottom: 20px;
+}
+
+.styled-table {
+   
+    width: 100%;
+    font-size: 1rem;
+    background: linear-gradient(145deg, rgba(216, 227, 245, 0.8), rgba(252, 247, 253, 0.8));
+    border-radius: 12px;
+}
+
+.styled-table thead tr {
+    background: linear-gradient(90deg, #B3CDE0);
+    color: #333333;
+    text-align: center;
+    font-weight: 600;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: rgba(161, 56, 239, 0.1);
+}
+
+
+.styled-table td {
+    color: #545454;
+}
+
+.styled-table a {
+    color: #a138ef;
+    text-decoration: none;
+}
+
+
+nav {
+    
+    position:fixed;
+    top: 0; 
+    left:0; 
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 6vw
+    
+  }
+  
+  nav img {
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  nav .navigation {
+    display: ;
+    align-items: center;
+  }
+  
+  
+  nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  nav .navigation ul li a {
+    text-decoration: none;
+    color: #545454;
+  }
+  
